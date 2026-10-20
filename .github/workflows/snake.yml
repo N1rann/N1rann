@@ -9,6 +9,9 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: 
+      contents: write
     steps:
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk@v3
